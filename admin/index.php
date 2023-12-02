@@ -25,9 +25,7 @@ $statement = $pdo->prepare("SELECT * FROM tbl_customer WHERE cust_status='1'");
 $statement->execute();
 $total_customers = $statement->rowCount();
 
-$statement = $pdo->prepare("SELECT * FROM tbl_subscriber WHERE subs_active='1'");
-$statement->execute();
-$total_subscriber = $statement->rowCount();
+
 
 $statement = $pdo->prepare("SELECT * FROM tbl_shipping_cost");
 $statement->execute();
